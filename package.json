@@ -1,0 +1,32 @@
+{
+    "name": "weedb",
+    "version": "0.0.0",
+    "description": "A wee database built on LevelDB",
+    "homepage": "http://github.com/scttnlsn/weedb",
+    "main": "lib/weedb",
+
+    "author": {
+        "name": "Scott Nelson",
+        "email": "scott@scttnlsn.com",
+        "web": "http://scttnlsn.com"
+    },
+    
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/scttnlsn/weedb.git"
+    },
+
+    "scripts": {
+        "test": "./node_modules/.bin/mocha"
+    },
+
+    "dependencies": {
+        "level": "0.12.x",
+        "node-uuid": "1.4.x"
+    },
+
+    "devDependencies": {
+        "mocha": "1.12.x",
+        "rimraf": "2.2.x"
+    }
+}
