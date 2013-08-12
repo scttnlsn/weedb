@@ -1,4 +1,5 @@
 var assert = require('assert');
+require('./helpers');
 
 describe('Collection', function () {
     beforeEach(function () {
