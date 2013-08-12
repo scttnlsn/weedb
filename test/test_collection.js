@@ -58,7 +58,7 @@ describe('Collection', function () {
         beforeEach(function (done) {
             var self = this;
 
-            this.collection.put({ foo: 'bar' }, function (err, doc) {
+            this.collection.put({ _id: 1, foo: 'bar' }, function (err, doc) {
                 if (err) return done(err);
 
                 self.docs.push(doc);
@@ -69,7 +69,7 @@ describe('Collection', function () {
         beforeEach(function (done) {
             var self = this;
 
-            this.collection.put({ baz: 'qux' }, function (err, doc) {
+            this.collection.put({ _id: 3, baz: 'qux' }, function (err, doc) {
                 if (err) return done(err);
 
                 self.docs.push(doc);
@@ -89,7 +89,7 @@ describe('Collection', function () {
         });
 
         it('returns range of documents', function (done) {
-            this.collection.range(undefined, this.docs[1]._id).all(function (err, docs) {
+            this.collection.range(1, 2).all(function (err, docs) {
                 if (err) return done(err);
 
                 assert.equal(docs.length, 1);
