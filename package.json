@@ -21,12 +21,12 @@
     },
 
     "dependencies": {
-        "async": "0.2.x",
         "level": "0.12.x",
         "node-uuid": "1.4.x"
     },
 
     "devDependencies": {
+        "async": "0.2.x",
         "mocha": "1.12.x",
         "rimraf": "2.2.x"
     }
